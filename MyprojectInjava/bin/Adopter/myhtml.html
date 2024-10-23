@@ -1,0 +1,86 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="ISO-8859-1">
+    <title>Registration Form</title>
+    <style>
+        .myclass {
+            /* Add any styles for this class */
+        }
+        .mybclass {
+            background-color: aquamarine;
+        }
+        .clabel {
+            font-size: 25px;
+            color: deepskyblue;
+        }
+        .mydiv {
+            color: brown;
+            text-align: center;
+            font-size: 50px;
+            background-color: aqua;
+        }
+        .myfdiv {
+            text-align: center;
+            background-color: antiquewhite;
+            border: 1px solid red;
+        }
+        .submits {
+            background-color: blue;
+            font-size: 18px;
+            color: white;
+        }
+        .files {
+            background-color: rgb(212, 146, 203);
+            font-size: 18px;
+        }
+        .div {
+            display: flex;
+        }
+    </style>
+</head>
+<body class="mybclass">
+    <div class="flink">
+        <a href="Login.jsp">Login</a>
+    </div>
+    <div class="mydiv">
+        <h1><b>User Registration Form</b></h1>
+    </div>
+    <div>
+        <button style="background-color:aqua; font-size:18px;" type="button"
+            onclick="document.getElementById('demo').style.backgroundColor='lightblue'">Click On</button>
+        <br><br>
+        <button style="background-color:white; font-size:18px;" type="button"
+            onclick="document.getElementById('demo').style.backgroundColor='white'">Click Off</button>
+        <div class="div">
+            <div>
+                <img src="IconJpg/profile.png" height="150" width="100" alt="Profile Image"><br>
+            </div>
+            <div class="container">
+                <form action="RegisterS" id="demo" class="myfdiv">
+                    <label class="clabel">Name</label><br>
+                    <input type="text" name="fname"><br>
+                    <label class="clabel">Email</label><br>
+                    <input type="email" name="femail"><br>
+                    <label class="clabel">Password</label><br>
+                    <input type="password" name="fpass"><br>
+                    <label class="clabel">Mobile No.</label><br>
+                    <input type="number" name="fmno"><br>
+                    <label class="clabel">DOB</label><br>
+                    <input type="date" name="fdob"><br>
+                    <label class="clabel">Address</label><br>
+                    <input type="text" name="faddress"><br>
+                    <label class="clabel">File</label><br>
+                    <input class="files" type="file"><br><br>
+                    <label class="clabel">Submit Button</label><br>
+                    <input class="submits" type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
